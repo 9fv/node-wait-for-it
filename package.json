@@ -1,0 +1,24 @@
+{
+  "name": "@9fv.io/wait-for-it",
+  "version": "0.1.0-alpha1",
+  "description": "A Node function to test and wait on the availability of a TCP host and port (porting of bash script: vishnubob/wait-for-it).",
+  "main": "lib/wait-for-it.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/9fv/node-wait-for-it.git"
+  },
+  "keywords": [
+    "wait",
+    "9fv",
+    "wait-for-it"
+  ],
+  "author": "9 Février <contact@9fevrier.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/9fv/node-wait-for-it/issues"
+  },
+  "homepage": "https://github.com/9fv/node-wait-for-it#readme"
+}
