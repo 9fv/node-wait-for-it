@@ -1,24 +1,71 @@
 {
   "name": "@9fv.io/wait-for-it",
   "version": "0.1.0-alpha1",
-  "description": "A Node function to test and wait on the availability of a TCP host and port (porting of bash script: vishnubob/wait-for-it).",
-  "main": "lib/wait-for-it.js",
+  "description": "Tests if a host port is accessible by validating the formatting of the host and the port beforehand.",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
   "scripts": {
-    "test": "gulp test"
+    "test": "nyc mocha",
+    "lint": "node ./node_modules/gulp/bin/gulp.js lint",
+    "docs": "node ./node_modules/gulp/bin/gulp.js docs",
+    "coverage": "npm run test && nyc report --reporter=text-lcov | coveralls",
+    "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/9fv/node-wait-for-it.git"
   },
   "keywords": [
-    "wait",
-    "9fv",
-    "wait-for-it"
+    "host",
+    "port",
+    "hostname",
+    "network",
+    "reachability",
+    "reachable",
+    "formatting",
+    "validation"
   ],
   "author": "9 Février <contact@9fevrier.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/9fv/node-wait-for-it/issues"
   },
-  "homepage": "https://github.com/9fv/node-wait-for-it#readme"
+  "homepage": "https://github.com/9fv/node-wait-for-it#readme",
+  "devDependencies": {
+    "coveralls": "^3.0.0",
+    "current-git-branch": "^1.0.1",
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-mocha": "^4.11.0",
+    "eslint-plugin-react": "^7.5.1",
+    "fs-then-native": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^4.0.1",
+    "gulp-istanbul": "^1.1.3",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-mocha": "^5.0.0",
+    "gulp-mustache": "^3.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.8",
+    "isparta": "^4.0.0",
+    "jsdoc-to-markdown": "^4.0.1",
+    "mocha": "^5.0.0",
+    "nyc": "^11.4.1",
+    "pre-commit": "^1.2.2",
+    "require-dir": "^1.0.0",
+    "should": "^13.2.1"
+  },
+  "dependencies": {
+    "@9fv.io/is-port-reachable": "0.1.0-beta1",
+    "bluebird": "^3.5.1",
+    "host-port": "0.1.0-alpha1",
+    "lodash": "^4.17.4",
+    "repeat-until-success": "^0.1.1"
+  }
 }
