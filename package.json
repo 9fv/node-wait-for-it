@@ -1,6 +1,6 @@
 {
   "name": "@9fv.io/wait-for-it",
-  "version": "0.1.0-alpha1",
+  "version": "0.1.0-beta1",
   "description": "Tests if a host port is accessible by validating the formatting of the host and the port beforehand.",
   "main": "lib/index.js",
   "directories": {
