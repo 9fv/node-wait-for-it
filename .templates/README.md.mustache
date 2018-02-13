@@ -25,7 +25,7 @@
 {{github.REPO_NAME}}
 ====================
 
-Tests if a host port is accessible by validating the formatting of the host and the port beforehand.
+Waits until all pairs (host:port) respond.
 
 [![Latest NPM release][npm-badge]][npm-badge-url]
 [![NPM Downloads][npm-downloads-badge]][npm-downloads-url]
@@ -57,17 +57,26 @@ Tests if a host port is accessible by validating the formatting of the host and 
 
 ## <a name="synopsis"> Synopsis
 
-Tests if a host port is accessible by validating the formatting of the host and the port beforehand.
+Waits until all pairs (host:port) respond.
 
 **Warning!** Work in progress...
 
 ## <a name="usage"> Usage
 
 ```javascript
-   const {isPortReachable} = require('is-port-reachable');
+   const {waitForIt} = require('@9fv/wait-for-it');
 
-   # Test if the port 443 of host 172.17.0.2 is reachable.
-   isPortReachable('172.17.0.2:443');
+   waitForIt('www.google.com:80').wait();
+
+   waitForIt('www.google.com:80 www.yahoo.fr:80 www.laposte.net:80').wait();
+
+   waitForIt('www.jesuisunnomdedomainequinexistepas.com:443').wait();
+
+   waitForIt().add('www.google.com:443')
+     .add('www.jesuisunnomdedomainequinexistepas.com:443')
+     .timeout(15000)
+     .delay(1000)
+     .wait();
 
 ```
 
