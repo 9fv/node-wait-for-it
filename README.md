@@ -2,12 +2,12 @@
 [npm-badge-url]: https://www.npmjs.com/package/@9fv.io&#x2F;wait-for-it
 [npm-downloads-badge]: https://img.shields.io/npm/dt/@9fv.io&#x2F;wait-for-it.svg
 [npm-downloads-url]: https://npmjs.org/package/@9fv.io&#x2F;wait-for-it
-[travis-badge]: https://img.shields.io/travis/9fv/node-wait-for-it/v0.1.0-alpha1.svg?label=TravisCI
+[travis-badge]: https://img.shields.io/travis/9fv/node-wait-for-it/master.svg?label=TravisCI
 [travis-badge-url]: https://travis-ci.org/9fv/node-wait-for-it
-[circle-badge]: https://circleci.com/gh/9fv/node-wait-for-it/tree/v0.1.0-alpha1.svg?style=svg&circle-token=
-[circle-badge-url]: https://circleci.com/gh/9fv/node-wait-for-it/tree/v0.1.0-alpha1
-[coveralls-badge]: https://coveralls.io/repos/github/9fv/node-wait-for-it/badge.svg?branch=v0.1.0-alpha1
-[coveralls-badge-url]: https://coveralls.io/github/9fv/node-wait-for-it?branch=v0.1.0-alpha1
+[circle-badge]: https://circleci.com/gh/9fv/node-wait-for-it/tree/master.svg?style=svg&circle-token=
+[circle-badge-url]: https://circleci.com/gh/9fv/node-wait-for-it/tree/master
+[coveralls-badge]: https://coveralls.io/repos/github/9fv/node-wait-for-it/badge.svg?branch=master
+[coveralls-badge-url]: https://coveralls.io/github/9fv/node-wait-for-it?branch=master
 [codeclimate-badge]: https://img.shields.io/codeclimate/github/9fv/node-wait-for-it.svg
 [codeclimate-badge-url]: https://codeclimate.com/github/9fv/node-wait-for-it
 [ember-observer-badge]: http://emberobserver.com/badges/node-wait-for-it.svg
